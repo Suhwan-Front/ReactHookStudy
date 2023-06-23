@@ -1,8 +1,8 @@
 # useState
 
-#### useState의 특성은?
+### useState의 특성은?
 
-`class`의 `this.state`와 비슷하다. 일반 변수는 함수가 끝날때 사라지지만 `state`변수는 사라지지 않는다.
+`class`의 `this.state`와 비슷합니다. 일반 변수는 함수가 끝날때 사라지지만 `state`변수는 사라지지 않습니다.
 
 ```js
 import React, {useState} from 'react';
@@ -24,9 +24,9 @@ export default UseStateTest;
 
 [useState 실제 작성 코드](https://github.com/Suhwan-Front/ReactHookStudy/tree/master/src/components/UseStateTest.tsx)
 
-#### useState의 인자로 무엇을 넘겨줘야 할까?
+### useState의 인자로 무엇을 넘겨줘야 할까?
 
-`useState()`로 넘겨줘야 하는 값은 `state`의 초기값이다. 함수 컴포넌트의 `state`는 객체 형태를 가져야한다. `useState()`는 객체일 필요가 없다. 숫자형 문자형등 타입을 가질 수 있다.
+`useState()`로 넘겨줘야 하는 값은 `state`의 초기값입니다. 함수 컴포넌트의 `state`는 객체 형태를 가져야합니다. `useState()`는 객체일 필요가 없습니다. 숫자형 문자형등 타입을 가질 수 있습니다.
 
 ```js
 import React, {useState} from 'react';
@@ -67,11 +67,11 @@ const ExampleComponent: React.FC = () => {
 ```
 
 > **왜 `createState`가 아니라 `useState`로 사용할까?**  
-> 컴포넌트가 렌더링될때 한번만 state가 생성되기 때문에 create라는 말은 적합하지 않다. 기존에 존재하는 state를 반복해서 사용하기 때문에 use라는 말을 사용한다.
+> 컴포넌트가 렌더링될때 한번만 state가 생성되기 때문에 create라는 말은 적합하지 않습니다. 기존에 존재하는 state를 반복해서 사용하기 때문에 use라는 말을 사용합니다.
 
-#### state의 형태가 가지는 의미는 뭘까?
+### state의 형태가 가지는 의미는 뭘까?
 
-`useState`를 사용하면 대괄호를 이용하여 선언한다.
+`useState`를 사용하면 대괄호를 이용하여 선언합니다.
 
 ```js
 const [value, setValue] = useState(0);
