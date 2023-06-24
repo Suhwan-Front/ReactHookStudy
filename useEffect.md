@@ -16,6 +16,8 @@ useEffect(() => {
 }, [a, b]);
 ```
 
+[useEffect 실제 작성 코드](https://github.com/Suhwan-Front/ReactHookStudy/tree/master/src/components/UseEffectTest.tsx)
+
 기본 형태를 보면 3가지를 확인할 수 있습니다. `setup code`와 `cleanup code` 그리고 배열에 존재하는 인자입니다.
 
 `useEffect`를 사용할 때 최초로 컴포넌트가 `DOM`에 추가될 때 `React`는 `setup code`부분을 실행 시킬 것입니다.
